@@ -40,11 +40,16 @@
                 alert("El campo 'Asunto' es requerido");
                 document.mail_frm.asunto_txt.focus();
                 verificar = false;                
-            }else if(!document.mail_frm.mensaje_txa.value){
+            } else if(!document.mail_frm.archivo_fls.value){
+                alert("El campo 'Adjuntar archivo' es requerido");
+                document.mail_frm.archivo_fls.focus();
+                verificar = false;                
+            } else if(!document.mail_frm.mensaje_txa.value){
                 alert("El campo 'Mensaje' es requerido");
                 document.mail_frm.mensaje_txa.focus();
                 verificar = false;                
             }
+
             if (verificar) {
                 document.mail_frm.submit();
             }            
@@ -55,10 +60,11 @@
     </script>
 </head>
 <body>
-    <form name="mail_frm" action="http://bextlan.com/alumnos/recursos/curso-PHP/enviar-mail.php" method="post" enctype="application/x-www-form-urlencoded">
+    <form name="mail_frm" action="enviar-phpmailer.php" method="post" enctype="multipart/form-data">
     De: <input type="text" name="de_txt" /><br/><br/>
     Para: <input type="text" name="para_txt" /><br/><br/>
     Asunto: <input type="text" name="asunto_txt" /><br/><br/>
+    Adjuntar archivo: <input type="file" name="archivo_fls" /><br/><br/>
     Mensaje: <br/><textarea name="mensaje_txa"></textarea><br/>
     <input type="button" name="enviar_btn" value="Enviar" /><br/>
 

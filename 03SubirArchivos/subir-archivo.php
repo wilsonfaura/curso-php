@@ -9,8 +9,7 @@
         move_uploaded_file($archivo,$destino);
         echo "Archivo subido :)";
     }else {
-        echo "Solo se admiyten archivos de texto plano<br/><a href=\"enviar-archivo.php\">REGRESAR</a>";
+        echo "Solo se admiten archivos de texto plano<br/><a href=\"enviar-archivo.php\">REGRESAR</a>";
     }
-
 
 ?>

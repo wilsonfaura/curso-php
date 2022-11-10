@@ -7,8 +7,8 @@
     <title>Cookies en PHP</title>
 </head>
 <body>
-    <a href="grabar-cookie.php?idioma=es">Version en espa&ntilde;ol</a>
+    <a href="grabar-cookie.php?idioma=es">Versi&oacute;n en espa&ntilde;ol</a>
     <br/><br/>
-    <a href="grabar-cookie.php?idioma=en">Version en ingles</a>
+    <a href="grabar-cookie.php?idioma=en">Versi&oacute;n en ingl&eacute;s</a>
 </body>
 </html>
